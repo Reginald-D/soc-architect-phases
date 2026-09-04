@@ -39,7 +39,7 @@
 ## 1. Budget Framework Philosophy
 
 <div align="center">
-<img src="images/budget-framework-philosophy.png" alt="Budget framework philosophy — the most common budgeting mistake is buying tools first and figuring out staffing later, resulting in expensive shelfware and burned-out analysts; the correct approach is the 40/40/20 rule, allocating 40 percent to people, 40 percent to technology, and 20 percent to operations, because tools without skilled operators are just noise generators" width="500"/>
+<img width="1149" height="1369" alt="budget-framework-philosophy" src="https://github.com/user-attachments/assets/8001c992-0df3-4582-a47b-e0e9822c3dce" />
 </div>
 
 ---
@@ -47,15 +47,15 @@
 ## 2. Full Budget Model — Three-Year View
 
 <div align="center">
-<img src="images/budget-year1-build-phase.png" alt="Year 1 build phase budget covering roadmap phases 1-3, totaling 555,370 dollars across people at 410,000 including a SOC Architect, one T2 analyst, four part-time T1 analysts, and shared threat intel and detection engineering resources; technology at 107,700 covering Sentinel, MDE, Azure infrastructure, Thinkst Canary, Tenable, and free open-source tools; training and certifications at 19,500; and operations at 18,170 including a 10 percent contingency" width="640"/>
+<img width="1535" height="1024" alt="budget-year1-build-phase" src="https://github.com/user-attachments/assets/1bad896b-45ba-49af-886a-1f448d4170f7" />
 </div>
 
 <div align="center">
-<img src="images/budget-year2-expand-phase.png" alt="Year 2 expand phase budget covering roadmap phases 3-4, totaling 1,270,200 dollars, a 129 percent increase over Year 1, with people costs at 1,025,000 as analysts move to full-time and headcount grows to two T2 and six T1 analysts, technology at 186,200 reflecting expanded range and MDE licensing, and training and certifications at 31,000 for SANS-level certs" width="640"/>
+<img width="1535" height="1024" alt="budget-year2-expand-phase" src="https://github.com/user-attachments/assets/580b62b9-a5e8-4d6e-8734-87df1d6d3a49" />
 </div>
 
 <div align="center">
-<img src="images/budget-year3-sustain-phase.png" alt="Year 3 sustain phase budget covering roadmap phase 5 full 24/7 operations, totaling 2,360,000 dollars, with people costs at 2,065,000 across three shifts including nine T1 analysts, three T2 analysts, and three shift leads, technology at 225,000 for the mature stack, training at 40,000, and operations at 30,000, bringing the three-year total investment to approximately 4,185,570 dollars" width="640"/>
+<img width="1536" height="1024" alt="budget-year3-sustain-phase" src="https://github.com/user-attachments/assets/64ce9b90-809e-44b8-aaa9-97ccac367b02" />
 </div>
 
 ---
@@ -146,7 +146,7 @@ today, but because building compliant from the start costs a fraction of retrofi
 later.
 
 <div align="center">
-<img src="images/compliance-landscape.png" alt="Compliance framework landscape — NIST CSF 2.0 as the architecture language every CISO speaks, mapping directly to the six teams and five phases; NIST SP 800-61 as the IR standard playbooks should cite; MITRE ATT&CK as the detection coverage language already embedded; SOC 2 Type II required for client-facing operation with documented controls and an audit trail; ISO 27001 as the international standard driving documentation discipline the roadmap already requires; and CIS Controls v8 as a practical checklist mapping directly to tooling decisions" width="700"/>
+<img width="1429" height="1101" alt="compliance-landscape" src="https://github.com/user-attachments/assets/dddd77a6-84e4-4bd3-ad58-40bafcab5960" />
 </div>
 
 ---
@@ -154,7 +154,7 @@ later.
 ## 2. NIST CSF 2.0 Mapping — The SOC Against the Framework
 
 <div align="center">
-<img src="images/nist-csf-mapping.png" alt="NIST CSF 2.0 function mapping — Govern covers the SOC charter, policies, RBAC model, risk register, budget model, and leadership reporting; Identify covers asset inventory, Tenable vulnerability management, risk assessment, and ATT&CK coverage gap analysis; Protect covers MDE endpoint protection, Azure AD Conditional Access and MFA, network segmentation, and analyst RBAC; Detect covers Microsoft Sentinel, the KQL detection rule library, the honeypot network, and MISP threat intelligence; Respond covers the IR playbook library, shift operations workflow, SOAR automation, and the major incident communication plan; Recover covers Azure VM snapshots and backup procedures, the disaster recovery plan, post-incident review process, and lessons-learned documentation" width="560"/>
+<img width="1024" height="1536" alt="nist-csf-mapping" src="https://github.com/user-attachments/assets/b64d8add-514d-409f-ba27-0e93528ee63c" />
 </div>
 
 ---
@@ -318,7 +318,7 @@ SecurityIncident
 ## Everything Built — The Complete SOC Enterprise Blueprint
 
 <div align="center">
-<img src="images/complete-blueprint-session-index.png" alt="Complete eight-session build index — Session 1 Azure Sentinel Architecture, Session 2 Honeypot Network Design, Session 3 AI Agentic SOAR Workflow, Session 4 KQL Detection Library and MISP Platform, Session 5 MITRE ATT&CK Coverage Mapping and Detection-as-Code Pipeline, Session 6 Analyst Shift Operations, IR Playbook Library, and Purple Team Exercise Framework, Session 7 SOC Metrics and KPI Framework, Analyst Onboarding, and 24/7 Operational Readiness, and Session 8 Budget and Resource Planning Model, Compliance and Audit Framework, and Leadership Presentation — totaling a complete enterprise-grade SOC built from the ground up, every team, every phase, every deliverable" width="640"/>
+<img width="1402" height="1122" alt="complete-blueprint-session-index" src="https://github.com/user-attachments/assets/7def61f4-c099-41d9-836a-e18ee437adb6" />
 </div>
 
 <br/>
