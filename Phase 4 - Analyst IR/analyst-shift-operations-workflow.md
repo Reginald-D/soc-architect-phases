@@ -46,7 +46,7 @@ Before anything else, the shift architecture is defined — every other workflow
 on it.
 
 <div align="center">
-<img src="images/shift-structure-model.png" alt="Shift structure model across three roadmap phases — Phase 1-2 business-hours coverage with one T1 analyst, Phase 3-4 extended 16-hour coverage across two shifts with a mandatory 30-minute handoff, and Phase 5 full 24/7 coverage across three shifts with dedicated T1, T2, shift lead, and IR on-call staffing" width="640"/>
+<img width="1536" height="1024" alt="shift-structure-model" src="https://github.com/user-attachments/assets/a72a61c9-e2af-49f5-96dd-c49264580181" />
 </div>
 
 ---
@@ -57,7 +57,7 @@ This is **non-negotiable**. Every shift starts the same way, every time — cons
 what makes a SOC reliable.
 
 <div align="center">
-<img src="images/shift-start-checklist.png" alt="Fifteen-minute shift start checklist in four steps — read the handoff document for five minutes, run a tool health check for three minutes across Sentinel, MDE, honeypots, and MISP, review and prioritize the incident queue for five minutes, and read the Threat Intel brief for two minutes" width="640"/>
+<img width="1536" height="1024" alt="shift-start-checklist" src="https://github.com/user-attachments/assets/60b36319-eac8-4df8-bbbd-ab1a6de98f24" />
 </div>
 
 ---
@@ -65,7 +65,7 @@ what makes a SOC reliable.
 ## 3. Alert Triage Workflow — The Analyst Decision Tree
 
 <div align="center">
-<img src="images/alert-triage-tree.png" alt="Alert triage decision tree from a new Sentinel alert through reading the AI agentic enrichment brief, asking whether it is noise, and branching to close as false positive or scope and investigate the alert by who, what, where, when, and why, ending in confirmed false positive, suspicious escalated to T2, or confirmed true positive with an incident opened and playbook executed" width="500"/>
+<img width="1024" height="1536" alt="alert-triage-tree" src="https://github.com/user-attachments/assets/85c82227-00a4-4008-b93c-9f0015a2712b" />
 </div>
 
 ---
@@ -160,7 +160,7 @@ SecurityAlert
 ## 6. Shift Handoff Template — Required Every Shift End
 
 <div align="center">
-<img src="images/shift-handoff-template.png" alt="Shift handoff template capturing shift summary and alert totals, open incidents requiring action next shift, incidents resolved that shift, tool health issues, threat intel updates, notes for the incoming analyst, and shift metrics including mean time to detect, mean time to acknowledge, and false positive rate" width="500"/>
+<img width="1402" height="1122" alt="severity-sla-matrix" src="https://github.com/user-attachments/assets/37d83a06-9860-4fa8-8fc6-811b3d60c70b" />
 </div>
 
 ---
@@ -168,7 +168,7 @@ SecurityAlert
 ## 7. Analyst Role Progression — T1 vs T2 vs Shift Lead
 
 <div align="center">
-<img src="images/analyst-role-progression.png" alt="Analyst role progression from T1 as primary queue worker handling initial triage and escalating critical or ambiguous alerts, to T2 as escalation handler owning containment decisions and investigation, to Shift Lead as shift commander approving all containment actions and severity changes and signing off every handoff" width="560"/>
+<img width="1024" height="1536" alt="analyst-role-progression" src="https://github.com/user-attachments/assets/cd0a9403-fafa-4220-87e9-a5b3123e91be" />
 </div>
 
 ---
@@ -572,7 +572,7 @@ DeviceProcessEvents
 ## 1. What Purple Team Means in the SOC
 
 <div align="center">
-<img src="images/red-blue-purple-team.png" alt="Red team attacks the environment, Blue team detects and responds, and Purple team has both work together in real time — Red attacks while Blue watches live, and if Blue misses it a detection rule is written immediately before Red moves to the next technique, so every attack generates a new detection" width="640"/>
+<img width="1536" height="1024" alt="red-blue-purple-team" src="https://github.com/user-attachments/assets/70c9a180-e783-4716-b435-150cdd1ddf60" />
 </div>
 
 This is the single fastest way to improve detection coverage. One purple team day
@@ -583,7 +583,7 @@ typically yields 10 or more newly validated detection rules.
 ## 2. Purple Team Exercise Architecture
 
 <div align="center">
-<img src="images/purple-team-exercise-structure.png" alt="Purple team exercise structure — participants are a Red operator, a Blue analyst, a Detection Engineer, and an Exercise Lead; the environment targets range machines only on the isolated 10.0.2.0/24 subnet with full logging active; cadence runs monthly tabletops in Phase 1-2, monthly live single-technique exercises in Phase 3, and bi-weekly full kill-chain exercises in Phase 4-5" width="640"/>
+<img width="1536" height="1024" alt="purple-team-exercise-structure" src="https://github.com/user-attachments/assets/2dc64c41-bba9-4c42-b055-9ad24c800035" />
 </div>
 
 ---
@@ -593,7 +593,7 @@ typically yields 10 or more newly validated detection rules.
 Run for every exercise.
 
 <div align="center">
-<img src="images/purple-team-exercise-plan.png" alt="Purple team exercise plan template with exercise ID, date, duration, and lead fields, an objective statement, and a priority-ordered technique list mapping Kerberoasting, Password Spray, DCSync, Pass-the-Hash, and LSASS Dump to their MITRE IDs, the tool used, and the expected Sentinel alert" width="500"/>
+<img width="1024" height="1536" alt="purple-team-exercise-plan" src="https://github.com/user-attachments/assets/07b928cb-5f74-4f28-b039-d79ab9948064" />
 </div>
 
 **Success criteria:** detection rate target of 80% or more of techniques detected, mean
@@ -616,7 +616,7 @@ Each technique runs as a discrete atomic test, one at a time, measured precisely
 the open-source [Atomic Red Team](https://redcanary.com/atomic-red-team/) library.
 
 <div align="center">
-<img src="images/atomic-test-approach.png" alt="Atomic test timing sequence — the Exercise Lead calls go, the Red operator executes the technique, the Blue analyst watches Sentinel live and starts a stopwatch, the alert fires at an elapsed time or doesn't, and if no alert fires within five minutes it is logged as a detection failure" width="640"/>
+<img width="1536" height="1024" alt="atomic-test-approach" src="https://github.com/user-attachments/assets/83611110-89d0-4d21-b928-5286dbd02211" />
 </div>
 
 **Recorded for every test:** did the alert fire (yes, no, or partial); time to alert, in
@@ -693,11 +693,11 @@ wevtutil cl Security
 ## 6. Scoring Matrix — Measure Every Exercise
 
 <div align="center">
-<img src="images/exercise-scorecard.png" alt="Purple team exercise scorecard showing seven techniques tested with detection status, time to alert, and accuracy — Kerberoasting, Password Spray, DCSync, and LSASS Dump all detected with high accuracy, Pass-the-Hash not detected and requiring a new rule, and Scheduled Task partially detected requiring tuning, for an overall result of five of seven techniques detected at 71 percent" width="640"/>
+<img width="1536" height="1024" alt="exercise-scorecard" src="https://github.com/user-attachments/assets/e2f90ae8-1fe8-4ed1-97a8-c9b72b85e164" />
 </div>
 
 <div align="center">
-<img src="images/detection-failures-backlog.png" alt="Detection failures from the exercise immediately added to the detection backlog — Pass-the-Hash T1550.002 has no rule and becomes a priority-one detection task, Scheduled Task T1053.005 fires only on some task formats and needs tuning, with the next exercise scheduled to fix both gaps and then test lateral movement techniques" width="500"/>
+<img width="1536" height="1024" alt="detection-failures-backlog" src="https://github.com/user-attachments/assets/5c5e4acf-79b8-4a93-ad0a-72746828e376" />
 </div>
 
 ---
@@ -774,7 +774,7 @@ Used to track program evolution across the roadmap phases.
 ## The Complete SOC Operating System
 
 <div align="center">
-<img src="images/soc-operating-system.png" alt="The complete SOC operating system as a six-layer cycle — Intelligence layer feeding MISP, honeypots, and external feeds into Sentinel watchlists; Detection layer auto-deploying the KQL rule library via CI/CD; Monitoring layer with Sentinel, MDE, and Azure Defender enriched by SOAR in under 90 seconds; Operations layer resolving incidents through shift workflow and clear T1/T2/Shift Lead roles; Response layer containing threats via MDE, Azure AD, and firewall through the IR playbook library; and Improvement layer feeding monthly purple team exercises and coverage gap reports back into the Intelligence layer, so the SOC gets stronger every week" width="700"/>
+<img width="1536" height="1024" alt="soc-operating-system" src="https://github.com/user-attachments/assets/bdece0dd-9eca-4f36-a935-7042768d3eef" />
 </div>
 
 <br/>
