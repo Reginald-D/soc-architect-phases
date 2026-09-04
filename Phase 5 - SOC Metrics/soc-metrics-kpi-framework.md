@@ -46,7 +46,7 @@ dashboards but say nothing about whether the team is actually getting better at 
 attackers. Every metric tracked here is built around three questions.
 
 <div align="center">
-<img src="images/metrics-philosophy.png" alt="Three metrics questions — Are we detecting faster, mapped to detection metrics; Are we responding better, mapped to response metrics; and Are we improving over time, mapped to program health metrics" width="640"/>
+<img width="1774" height="887" alt="metrics-philosophy" src="https://github.com/user-attachments/assets/66466cb3-942b-4eee-b647-610639e48e25" />
 </div>
 
 Every metric tracked must answer one of those three questions. If it doesn't, it gets cut.
@@ -58,19 +58,19 @@ Every metric tracked must answer one of those three questions. If it doesn't, it
 **Tier 1 — Operational Metrics (Measured Daily)**
 
 <div align="center">
-<img src="images/kpi-tier1-operational.png" alt="Tier 1 daily operational metrics — MTTD target under 15 minutes, MTTA under 5 minutes, MTTR under 4 hours for High and 1 hour for Critical, MTTC under 2 hours for High and 30 minutes for Critical, stable alert volume, false positive rate under 20 percent, and escalation rate between 10 and 20 percent" width="640"/>
+<img width="1536" height="1024" alt="kpi-tier1-operational" src="https://github.com/user-attachments/assets/9f0461e9-4d35-4140-a0c2-16c118f3e3d9" />
 </div>
 
 **Tier 2 — Detection Quality Metrics (Measured Weekly)**
 
 <div align="center">
-<img src="images/kpi-tier2-detection-quality.png" alt="Tier 2 weekly detection quality metrics — detection coverage targeting 40 percent by Phase 3 and 60 percent by Phase 5, purple team detection rate above 80 percent per exercise, rule efficacy above 70 percent, a downward-trending detection backlog, tracked honeypot hit rate, and IOC feed quality above 5 percent hit rate" width="640"/>
+<img width="1536" height="1024" alt="kpi-tier2-detection-quality" src="https://github.com/user-attachments/assets/fdae9b0e-5c3f-44de-942f-799bc2ef0fd8" />
 </div>
 
 **Tier 3 — Program Health Metrics (Measured Monthly)**
 
 <div align="center">
-<img src="images/kpi-tier3-program-health.png" alt="Tier 3 monthly program health metrics — analyst throughput trending up, SLA compliance above 95 percent, automation coverage above 80 percent, analyst dwell time under 20 minutes for T1 and 60 minutes for T2, playbook coverage above 85 percent by Phase 4, documentation currency above 90 percent, and analyst retention above 80 percent" width="640"/>
+<img width="1536" height="1024" alt="kpi-tier3-program-health" src="https://github.com/user-attachments/assets/88471069-9673-415f-8542-d489f19d3ed1" />
 </div>
 
 ---
@@ -238,7 +238,7 @@ critical incidents required after-hours escalation.
 **Key Metrics — This Month vs. Last Month**
 
 <div align="center">
-<img src="images/monthly-report-key-metrics.png" alt="Monthly SOC report metrics comparison showing MTTD improving from 18 to 12 minutes, MTTA from 6 to 4 minutes, MTTR High from 4.8 to 3.2 hours, false positive rate dropping from 24 to 18 percent, SLA compliance rising from 91 to 96 percent, and ATT&CK coverage rising from 31 to 38 percent, alongside an alert volume increase flagged for attention" width="560"/>
+<img width="1536" height="1024" alt="monthly-report-key-metrics" src="https://github.com/user-attachments/assets/07fdb9c4-3190-45ca-9cca-45c8bc24a5cb" />
 </div>
 
 **Significant Incidents**
@@ -435,7 +435,7 @@ Most SOCs think 24/7 readiness means "do we have enough people?" Real readiness 
 eight questions.
 
 <div align="center">
-<img src="images/readiness-eight-questions.png" alt="Eight 24/7 readiness questions — Coverage: can three shifts be staffed with no single points of failure; Automation: can the SOC function overnight with minimal human load; Tooling: are all tools stable enough to run unattended for eight hours; Escalation: what happens if something critical occurs at 3am; Documentation: can a T1 analyst handle any alert without help; Resilience: what is the backup if Sentinel goes down overnight; Knowledge: is knowledge distributed or held by one person; Process: are processes defined enough for overnight execution without the architect available" width="640"/>
+<img width="1536" height="1024" alt="readiness-eight-questions" src="https://github.com/user-attachments/assets/80f94420-e8dc-4b30-a042-beaf785cd480" />
 </div>
 
 ---
@@ -445,35 +445,35 @@ eight questions.
 Run this assessment quarterly. Each item is scored 1–5.
 
 <div align="center">
-<img src="images/readiness-dim1-staffing.png" alt="Dimension 1, Staffing Readiness scorecard — minimum three certified T1 analysts per shift slot, T2 on-call for every shift, no analyst working more than two consecutive shifts, weekend coverage plan, backup coverage for absences, designated shift lead, and a current escalation contact list, scored out of 35" width="560"/>
+<img width="1536" height="1024" alt="readiness-dim1-staffing" src="https://github.com/user-attachments/assets/f186699f-c217-42de-a7e0-3551ec0fbcbb" />
 </div>
 
 <div align="center">
-<img src="images/readiness-dim2-automation.png" alt="Dimension 2, Automation Readiness scorecard — SOAR enrichment on 90 percent-plus of alerts, playbook failure rate under 2 percent, validated auto-close rate, AI agentic brief attached before analyst review, error-free honeypot auto-IOC pipeline, MISP to Sentinel sync on schedule, and accurate alert routing, scored out of 35" width="560"/>
+<img width="1536" height="1024" alt="readiness-dim2-automation" src="https://github.com/user-attachments/assets/787d4246-d090-4ca8-af5e-42fb5d1f2dcc" />
 </div>
 
 <div align="center">
-<img src="images/readiness-dim3-tooling.png" alt="Dimension 3, Tooling Stability scorecard — Sentinel uptime above 99.5 percent over 90 days, no MDE connector gaps in 30 days, continuous honeypot logging, tested automated health check alerts, a tested tool failure playbook, a backup alerting channel, and a documented log retention policy, scored out of 35" width="560"/>
+<img width="1536" height="1024" alt="readiness-dim3-tooling" src="https://github.com/user-attachments/assets/31791453-dc96-4dc4-b6ea-63a584ddc929" />
 </div>
 
 <div align="center">
-<img src="images/readiness-dim4-escalation.png" alt="Dimension 4, Escalation Readiness scorecard — a posted escalation matrix, tested T2 on-call response under 15 minutes, documented emergency-contact criteria, a tested major incident communication plan, a documented tool-failure escalation path, configured after-hours critical alert paging, and current external escalation contacts, scored out of 35" width="560"/>
+<img width="1536" height="1024" alt="readiness-dim4-escalation" src="https://github.com/user-attachments/assets/b78cffff-3cc0-477e-af58-ff9112f279e3" />
 </div>
 
 <div align="center">
-<img src="images/readiness-dim5-documentation.png" alt="Dimension 5, Documentation Readiness scorecard — a complete shift start checklist, authored and annotated detection rules, a playbook for every alert type with more than five hits monthly, a SOC Operations Manual reviewed in the last 60 days, an onboarding guide that produces a certified analyst in 14 days, a current false-positive list, and monthly validated watchlists, scored out of 35" width="560"/>
+<img width="1536" height="1024" alt="readiness-dim5-documentation" src="https://github.com/user-attachments/assets/7dbc6938-02c5-43cc-8c0e-4da55c4480c0" />
 </div>
 
 <div align="center">
-<img src="images/readiness-dim6-resilience.png" alt="Dimension 6, Resilience Readiness scorecard — a Sentinel failure playbook tested in the last 90 days, an MDE fallback detection method, network isolation possible without Sentinel, a backup communication channel, tested MISP backup and restore, a configured Azure budget alert, and tested disaster recovery for SOC tooling, scored out of 35" width="560"/>
+<img width="1536" height="1024" alt="readiness-dim6-resilience" src="https://github.com/user-attachments/assets/98072db1-26c3-4f6f-a41b-0b6b5cd6df2e" />
 </div>
 
 <div align="center">
-<img src="images/readiness-dim7-knowledge.png" alt="Dimension 7, Knowledge Distribution scorecard — no single person holding undocumented critical knowledge, two-plus admin analysts per tool, every playbook executed by more than one analyst, purple team knowledge not held by one person, Detection Engineering resilient to a single absence, fully documented threat intel feed management, and analyst onboarding that does not require the original creator, scored out of 35" width="560"/>
+<img width="1536" height="1024" alt="readiness-dim7-knowledge" src="https://github.com/user-attachments/assets/42e2a205-77b5-4a9a-ad2c-4ddfe23f1ade" />
 </div>
 
 <div align="center">
-<img src="images/readiness-dim8-process.png" alt="Dimension 8, Process Maturity scorecard — consistently high shift handoff quality, SLA compliance above 95 percent for 30 days, an alert queue that never backs up more than two hours, post-incident reviews within 72 hours, change management followed for all tools, weekly metrics review by shift leads, and purple team exercises run on cadence, scored out of 35" width="560"/>
+<img width="1536" height="1024" alt="readiness-dim8-process" src="https://github.com/user-attachments/assets/930fffb2-7bc6-4bbd-bad5-56f0c6a5d5fa" />
 </div>
 
 ---
@@ -481,7 +481,7 @@ Run this assessment quarterly. Each item is scored 1–5.
 ## 3. Readiness Score Interpretation
 
 <div align="center">
-<img src="images/readiness-score-interpretation.png" alt="Readiness score interpretation out of a total possible 280 points — 0 to 140 (50 percent) is Not Ready with significant gaps to fix before any 24/7 discussion, 141 to 196 (70 percent) is Approaching Readiness with a 90-day plan to close gaps, 197 to 238 (85 percent) is Operational Ready for 24/7 with known risk areas documented, and 239 to 280 (95 percent) is Fully Ready as a mature 24/7 SOC capable of sustained operations" width="640"/>
+<img width="1536" height="1024" alt="readiness-score-interpretation" src="https://github.com/user-attachments/assets/ca937e43-04fe-4e49-af81-afb494f5bb98" />
 </div>
 
 ---
@@ -513,7 +513,7 @@ When the assessment reveals gaps, remediation follows priority order.
 ## 5. The 24/7 Transition Plan — Phase 5 of the Roadmap
 
 <div align="center">
-<img src="images/road-to-247-gates.png" alt="Road to 24/7 with eight milestone gates — readiness score above 85 percent across all dimensions, minimum nine certified analysts, all critical playbooks tested by two or more analysts, SOAR enrichment above 90 percent for 30 straight days, SLA compliance above 95 percent for 60 consecutive days, zero tool health gaps in 30 days, overnight shift staffed and trained, and a passed overnight tabletop exercise — followed by a transition sequence running overnight shadow mode in weeks 1-2, low-severity-only handling in weeks 3-4, full alerts with T2 on-call in weeks 5-6, and full 24/7 operation from week 7 onward" width="700"/>
+<img width="1122" height="1402" alt="road-to-247-gates" src="https://github.com/user-attachments/assets/180c319c-7a94-4be0-a2f5-8915c3d5f6d6" />
 </div>
 
 ---
@@ -552,7 +552,7 @@ restored, and have the morning shift review any coverage gaps from the failure w
 ## The Complete SOC Blueprint — Everything Built
 
 <div align="center">
-<img src="images/soc-fully-designed-blueprint.png" alt="The fully designed SOC as eight connected layers — Intelligence via MISP, honeypots, and external feeds; Detection via a 200-plus rule MITRE-mapped KQL library deployed through Detection-as-Code; Monitoring via Sentinel, MDE, and Azure Defender with SOAR enrichment under 90 seconds; Operations via shift workflow and T1/T2/Lead structure with SLAs; Response via the IR playbook library and MDE/AAD/Firewall containment; Improvement via monthly-to-biweekly purple team exercises and ATT&CK coverage gap reports; Measurement via the full tiered KPI framework and monthly leadership reporting; People via 14-day onboarding to certification and a T1-to-T2 development path; and Readiness via the eight-dimension 24/7 assessment and gate-based transition to round-the-clock operations" width="640"/>
+<img width="1024" height="1536" alt="soc-fully-designed-blueprint" src="https://github.com/user-attachments/assets/a00ada15-fa28-4b5f-9ba8-7e0f77657384" />
 </div>
 
 <br/>
