@@ -52,7 +52,7 @@ resisted here. A single workspace delivers:
 - Easier correlation rules
 
 <div align="center">
-<img src="images/workspace-hierarchy.png" alt="Azure Subscription containing Resource Group rg-soc-prod, holding the Log Analytics Workspace law-soc-cyberrange with Sentinel, Data Connectors, Analytics Rules, Playbooks, and Workbooks" width="640"/>
+<img width="1186" height="1327" alt="workspace-hierarchy" src="https://github.com/user-attachments/assets/c988a871-6a62-46cf-9937-70ff01eaaa8a" />
 </div>
 
 ---
@@ -93,7 +93,7 @@ on the last.
 ## 3. Data Ingestion Architecture
 
 <div align="center">
-<img src="images/data-ingestion-architecture.jpg" alt="Data flow from cyber range Windows, Linux, and honeypot VMs through MDE telemetry and Azure Monitor Agent into the Log Analytics Workspace and Microsoft Sentinel" width="700"/>
+<img width="1360" height="1240" alt="data-ingestion-architecture" src="https://github.com/user-attachments/assets/34311dd8-22d9-4ec9-9131-214a1ac49849" />
 </div>
 
 ---
@@ -149,7 +149,7 @@ arriving. Used sparingly, for cases like:
 Defined before anyone else touches the workspace.
 
 <div align="center">
-<img src="images/rbac-tiers.png" alt="Sentinel RBAC tiers — SOC Architect (Contributor plus Owner), Detection Engineers (Contributor), T2 Analysts and IR Team (Responder), T1 Analysts (Reader), and Threat Intel Team (scoped Contributor)" width="560"/>
+<img width="1024" height="1536" alt="rbac-tiers" src="https://github.com/user-attachments/assets/643f1d17-f2a1-4559-a30f-c6454a7d11aa" />
 </div>
 
 ---
@@ -281,7 +281,7 @@ is designed first.
 ## 2. Network Topology — Azure VNet Architecture
 
 <div align="center">
-<img src="images/vnet-topology.png" alt="Azure VNet vnet-cyberrange with four subnets — SOC Ops, Honeypot DMZ, Range, and Lab/Test — plus NSG rules blocking any pivot path from the Honeypot DMZ to SOC Operations" width="640"/>
+<img width="1213" height="1297" alt="vnet-topology" src="https://github.com/user-attachments/assets/1c364cfd-48af-4f65-9326-1e49e3a74d4c" />
 </div>
 
 ---
@@ -421,7 +421,7 @@ The most important piece of the honeypot architecture. Every hit lands in Sentin
 full context, automatically.
 
 <div align="center">
-<img src="images/log-pipeline.png" alt="Log pipeline from Honeypot Hit through OpenCanary/Thinkst, the Syslog Forwarder VM, Azure Monitor Agent, the Log Analytics Workspace custom table, a Sentinel Analytics Rule, and a triggered SOAR playbook" width="500"/>
+<img width="927" height="1696" alt="log-pipeline" src="https://github.com/user-attachments/assets/49760427-e889-4f11-bb04-5d113b637b96" />
 </div>
 
 **Custom table schema for `HoneypotEvents_CL`:**
@@ -558,7 +558,7 @@ analysts can reconstruct exactly what automation did and why.
 ## 2. The Three Automation Tiers
 
 <div align="center">
-<img src="images/automation-tiers.png" alt="Automation Tiers — Tier 1 Enrich (Day 1, human decides), Tier 2 Triage Assist (Week 2+, auto-close for known patterns), and Tier 3 Response (Weeks 4-8+, high confidence only, approval gate recommended)" width="560"/>
+<img width="1021" height="1541" alt="automation-tiers" src="https://github.com/user-attachments/assets/85570475-6e18-44cf-ac4d-9865c0fe7045" />
 </div>
 
 ---
@@ -566,7 +566,7 @@ analysts can reconstruct exactly what automation did and why.
 ## 3. Full SOAR Architecture
 
 <div align="center">
-<img src="images/soar-pipeline.png" alt="AI Agentic SOAR pipeline from Sentinel incident creation through the Logic App master orchestrator, IP and user entity enrichment branches, the AI agentic scoring engine, routing and response decision, and write-back to the Sentinel incident" width="560"/>
+<img width="1024" height="1536" alt="soar-pipeline" src="https://github.com/user-attachments/assets/489b1c26-7915-4ccf-a19d-7b7ebcae3ac0" />
 </div>
 
 ---
@@ -693,7 +693,7 @@ routing decisions directly.
 ## 6. The Full Integrated Loop
 
 <div align="center">
-<img src="images/full-integrated-loop.png" alt="Full integrated loop from attacker action through Sentinel, the SOAR orchestrator, the AI agentic engine, and a routing decision to auto-close, T1 queue, T2 queue, or critical response with the IR team" width="500"/>
+<img width="1024" height="1536" alt="full-integrated-loop" src="https://github.com/user-attachments/assets/62d0b10c-e7c8-449d-b18e-0f08d72eabae" />
 </div>
 
 ---
@@ -742,6 +742,6 @@ routing decisions directly.
 <div align="center">
 
 *Every layer of this architecture — signal, detection, automation, and response —*
-*was built to be provably safe before it was made fast.*
+*was built to be provably safe before it was made.*
 
 </div>
