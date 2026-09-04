@@ -51,7 +51,7 @@ forward flows from that map.
 **Coverage states — used consistently across every layer file:**
 
 <div align="center">
-<img src="images/coverage-states.png" alt="Four coverage states — Detected (rule deployed and validated, low false positive rate), Partial (rule exists but incomplete coverage or high noise), Blind Spot (no detection capability at all), and Not Applicable (technique irrelevant to the environment)" width="560"/>
+<img width="1536" height="1024" alt="coverage-states" src="https://github.com/user-attachments/assets/338c1232-b857-4036-8a82-3239d0d0f0aa" />
 </div>
 
 ---
@@ -82,7 +82,7 @@ Based on the current stack — MDE, Sentinel, and honeypots — this is the hone
 coverage reality, before any custom rules were written:
 
 <div align="center">
-<img src="images/day1-coverage-baseline.png" alt="Day 1 coverage baseline across all 14 MITRE tactics for the Azure/MDE stack, ranging from 40 percent partial coverage on Initial Access to 10 percent blind spots on Discovery, Collection, and Exfiltration, for an overall baseline of approximately 22 percent" width="640"/>
+<img width="1402" height="1122" alt="day1-coverage-baseline" src="https://github.com/user-attachments/assets/22656fc2-230b-4341-af6d-4385e116febe" />
 </div>
 
 This is normal — most mature SOCs operate at 40–60% coverage. The goal by Phase 3 of the
@@ -168,7 +168,7 @@ attackers actually go in the environment — prioritized by three factors: **fre
 the wild, honeypot observations, and blast radius if missed.**
 
 <div align="center">
-<img src="images/detection-priority-matrix.png" alt="Detection priority build order across four tiers — P1 covers brute force, valid accounts, Kerberoasting, LSASS dump, DCSync, and ransomware; P2 covers PowerShell abuse, scheduled tasks, SMB lateral movement, pass-the-hash, log clearing, and AV tampering; P3 covers DNS C2 beaconing, exfiltration, LOLBins, WMI execution, new admin accounts, and phishing; P4 covers account discovery, domain trust discovery, DNS tunneling exfil, and token impersonation" width="640"/>
+<img width="1086" height="1448" alt="detection-priority-matrix" src="https://github.com/user-attachments/assets/0a35d84f-112c-490b-8d54-2527dcf86094" />
 </div>
 
 ---
@@ -236,7 +236,7 @@ SecurityAlert
 Produced monthly, one page, shared with all teams.
 
 <div align="center">
-<img src="images/coverage-gap-report.png" alt="Monthly ATT&CK coverage gap report showing 197 total mapped techniques at 21 percent detected, 9 percent partial, and 70 percent blind spots, with the top blind spots, rules added and retired that month, honeypot-observed techniques not yet detected, and next month's detection priorities" width="500"/>
+<img width="1024" height="1536" alt="coverage-gap-report" src="https://github.com/user-attachments/assets/b5b11c5b-e6f5-4eb6-a55c-9a67581bdb4d" />
 </div>
 
 ---
@@ -329,11 +329,11 @@ Detection-as-Code treats KQL rules exactly like software — version-controlled,
 reviewed, tested, and deployed through a pipeline instead of edited by hand in a portal.
 
 <div align="center">
-<img src="images/manual-detection-problems.png" alt="The old manual way — an analyst writes a rule and pastes it into the Sentinel portal — creates five problems: no version history, no peer review, no rollback, no testing, and two people editing the same rule, resulting in a risky, inefficient, unreliable, unscalable process" width="640"/>
+<img width="1536" height="1024" alt="manual-detection-problems" src="https://github.com/user-attachments/assets/b90382fe-7dfb-4e8c-97cc-66e26951a0df" />
 </div>
 
 <div align="center">
-<img src="images/detection-as-code-flow.png" alt="The Detection-as-Code way — an analyst writes or updates a rule, opens a GitHub pull request, a peer reviews it, automated testing runs, and it auto-deploys to Sentinel — delivering rollback in 30 seconds, full history, peer review, pre-live testing, and an auditable library" width="640"/>
+<img width="1536" height="1024" alt="detection-as-code-flow" src="https://github.com/user-attachments/assets/0c194fc1-0895-4611-a7b7-f190584265b9" />
 </div>
 
 ---
@@ -341,7 +341,7 @@ reviewed, tested, and deployed through a pipeline instead of edited by hand in a
 ## 2. Full Pipeline Architecture
 
 <div align="center">
-<img src="images/dac-pipeline-architecture.png" alt="Detection-as-Code pipeline from the engineer workstation cloning the repo and opening a pull request, through GitHub Actions CI validating KQL syntax, YAML schema, MITRE tags, false positives, and requiring peer review, to merge, then GitHub Actions CD generating templates and deploying first to the Sentinel lab workspace and then to production with audit logging" width="560"/>
+<img width="1024" height="1536" alt="dac-pipeline-architecture" src="https://github.com/user-attachments/assets/87619367-554e-49e9-aa31-af0494efd0f4" />
 </div>
 
 ---
@@ -827,13 +827,13 @@ and is severity appropriate?
 **Step 6 — Merge and auto-deploy**
 
 <div align="center">
-<img src="images/cd-pipeline-steps.png" alt="After PR approval and passing CI checks, the CD pipeline deploys the rule disabled to the lab workspace, validates it in lab, deploys it enabled to production, auto-updates the ATT&CK Navigator layer, and completes with full audit trail" width="640"/>
+<img width="1536" height="1024" alt="cd-pipeline-steps" src="https://github.com/user-attachments/assets/623c30a2-8f85-46ba-9aaf-8ec6d530bbc1" />
 </div>
 
 **Step 7 — Post-deploy monitoring**
 
 <div align="center">
-<img src="images/post-deploy-monitoring.png" alt="Post-deployment monitoring watches the rule for 48 hours, opening a tuning pull request if the false positive rate is too high, or investigating and taking action if there are zero hits after 7 days, with every decision documented in the repo and Sentinel audit table" width="640"/>
+<img width="1536" height="1024" alt="post-deploy-monitoring" src="https://github.com/user-attachments/assets/d9f92d7b-ea26-4ffc-8884-aa4234d84fc3" />
 </div>
 
 ---
@@ -878,7 +878,7 @@ and is severity appropriate?
 ## The System Now Built
 
 <div align="center">
-<img src="images/full-system-loop.png" alt="The complete closed loop — write rule as YAML and KQL, open a GitHub pull request, peer review, merge through lab validation to production, Sentinel rule goes live, the ATT&CK Navigator layer auto-updates, the monthly coverage gap report drives next priorities, and the loop repeats" width="560"/>
+<img width="1024" height="1536" alt="full-system-loop" src="https://github.com/user-attachments/assets/4d6bc5bb-9f84-4b58-aae3-5c2597d2fb62" />
 </div>
 
 <br/>
