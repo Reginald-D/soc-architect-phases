@@ -728,7 +728,7 @@ MISP serves four functions:
 ## 2. MISP Architecture in Azure
 
 <div align="center">
-<img src="images/misp-azure-deployment.png" alt="MISP deployed on an Ubuntu 22.04 VM in the SOC Ops subnet, running the MISP web application, MySQL, Redis, and Apache2, accessed internally via Azure Bastion and queried by Microsoft Sentinel over the MISP REST API" width="700"/>
+<img width="1402" height="1122" alt="misp-azure-deployment" src="https://github.com/user-attachments/assets/ae345986-da57-4d60-8d8a-0e3d91ac2b6a" />
 </div>
 
 ---
@@ -941,7 +941,7 @@ def add_honeypot_ioc(ip, service, timestamp):
 ## 9. MISP + Sentinel — The Intel Loop
 
 <div align="center">
-<img src="images/intel-feedback-loop.png" alt="Full intel feedback loop from an attacker hitting a honeypot, through automatic MISP IOC creation, a four-hour Sentinel watchlist sync, KQL detection rules querying the watchlist, alert firing with MISP context attached, analyst confirmation, and rising confidence scores for future alerts" width="560"/>
+<img width="1024" height="1536" alt="intel-feedback-loop" src="https://github.com/user-attachments/assets/e407ed09-c11b-432c-850f-0b75d70700d0" />
 </div>
 
 ---
@@ -982,7 +982,7 @@ def add_honeypot_ioc(ip, service, timestamp):
 ## The Complete Stack — Everything Connected
 
 <div align="center">
-<img src="images/complete-stack-loop.png" alt="Complete detection and intel stack loop — attacker activity captured by honeypots, centralized in MDE and Sentinel, automated and enriched by SOAR and Logic Apps, matched against MISP-synced watchlists by KQL detection rules, and routed through an AI-agentic brief to analyst decision, closing the loop back to MISP" width="600"/>
+<img width="1210" height="1300" alt="complete-stack-loop" src="https://github.com/user-attachments/assets/28f0648e-c632-4ab8-bd00-8d7d17bbe3ae" />
 </div>
 
 <br/>
