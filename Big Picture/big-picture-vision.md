@@ -9,13 +9,13 @@ Everything else is built around making that engine meaningful.
 
 Think of it in three layers:
 
-![Three-layer model — Signal, Detection, and Response](images/three-layer-model.png)
+<img width="1536" height="1024" alt="three-layer-model" src="https://github.com/user-attachments/assets/ab402b94-47a9-42d0-888c-2a3eceb6ca43" />
 
 ---
 
 ## Where to Start — Phase 1 Priorities for the Architect
 
-![Phase 1 priorities — Azure Sentinel baseline, MDE onboarding, SOAR playbook taxonomy, network segmentation, and team leads](images/phase-1-priorities.png)
+<img width="1536" height="1024" alt="phase-1-priorities" src="https://github.com/user-attachments/assets/6cc7b51b-a9d5-4d56-9d89-3861a3c215d0" />
 
 ---
 
@@ -38,7 +38,8 @@ How the existing stack extends, intentionally:
 
 ## The Architecture You're Building Toward
 
-![Target architecture — Honeypot DMZ through Microsoft Sentinel, AI Agentic layer, and SOC analyst workflow](images/target-architecture.png)
+<img width="1536" height="1024" alt="target-architecture" src="https://github.com/user-attachments/assets/b2c7c16e-1901-4fb9-86b0-902aed0ebdf6" />
+
 
 ---
 
@@ -69,4 +70,5 @@ How the existing stack extends, intentionally:
 
 ## Architect-Level Pitfalls to Avoid
 
-![Architect-level pitfalls — test/lab environment, premature AI automation, honeypot threat intel, and log retention](images/architect-pitfalls.png)
+<img width="1536" height="1024" alt="architect-pitfalls" src="https://github.com/user-attachments/assets/f91ecbdf-cd4f-48f8-8779-1548dfeefa94" />
+
